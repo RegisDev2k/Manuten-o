@@ -11,6 +11,9 @@ body {
 
 .container {
     text-align: center;
+    max-width: 800px; /* Adicionei uma largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Adicionei um padding para criar espaço */
 }
 
 .maintenance h1 {
@@ -54,4 +57,36 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Adicionei estilos para telas menores */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .maintenance h1 {
+        font-size: 2.2em;
+    }
+    .maintenance p {
+        font-size: 1em;
+    }
+    .countdown {
+        font-size: 1em;
+    }
+}
+
+/* Adicionei estilos para telas muito menores */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+    .maintenance h1 {
+        font-size: 1.8em;
+    }
+    .maintenance p {
+        font-size: 0.8em;
+    }
+    .countdown {
+        font-size: 0.8em;
+    }
 }
